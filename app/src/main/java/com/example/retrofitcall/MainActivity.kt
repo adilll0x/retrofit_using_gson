@@ -31,6 +31,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+
             RetrofitcallTheme {
                 var posts by remember { mutableStateOf<List<PostResponseItem>>(emptyList()) }
                 LaunchedEffect(Unit) {
@@ -47,6 +48,11 @@ class MainActivity : ComponentActivity() {
                                     Text(it.userId.toString())
                                     Text(it.title.toString())
                                     Text(it.body.toString())
+
+                                    "hello"
+
+
+
 
                                 }
 
